@@ -1,3 +1,4 @@
+//명언 
 const quotes = [
     {
       quote: "The way to get started is to quit talking and begin doing.",
@@ -42,10 +43,10 @@ const quotes = [
     },
   ];
 
-  const quote = document.querySelector("#quote span:first-child");
+  const quote = document.querySelector("#quote span:first-child");  //첫번째 span부분
   const author = document.querySelector("#quote span:last-child");
 
-const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];  //floor는 1.9999 -> 1,  random은 0~1까지 랜덤
 
 quote.innerText = todaysQuote.quote;
 author.innerText = todaysQuote.author;
